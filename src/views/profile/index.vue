@@ -16,6 +16,9 @@
               <el-tab-pane label="账户信息修改" name="account">
                 <account :user="user" />
               </el-tab-pane>
+              <el-tab-pane label="测试" name="testForProfile">
+                <testForProfile/>
+              </el-tab-pane>
             </el-tabs>
           </el-card>
         </el-col>
@@ -30,10 +33,11 @@ import { mapGetters } from 'vuex'
 import UserCard from './components/UserCard'
 import Timeline from './components/Timeline'
 import Account from './components/Account'
+import testForProfile from './components/testForProfile'
 
 export default {
   name: 'Profile',
-  components: { UserCard, Timeline, Account },
+  components: { UserCard, Timeline, Account, testForProfile },
   data() {
     return {
       user: {},

@@ -15,6 +15,16 @@ const getters = {
   majorName: state => state.major.majorName,
   clsNo: state => state.major.clsNo,
   college: state => state.major.college,
+  bookId: state => state.major.bookId,
+  bookName: state => state.major.bookName,
+  author: state => state.major.author,
+  publishingHouse: state => state.major.publishingHouse,
+  publishDate: state => state.major.publishDate,
+  pages: state => state.major.pages,
+  ISBN: state => state.major.ISBN,
+  price: state => state.major.price,
+  briefIntroduction: state => state.major.briefIntroduction,
+  authorIntroduction: state => state.major.authorIntroduction,
   permission_routes: state => state.permission.routes,
   errorLogs: state => state.errorLog.logs
 }
